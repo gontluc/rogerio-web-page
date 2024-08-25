@@ -1,20 +1,27 @@
-# pagina-rogerio
+# Rogerio's Website
 
-Rogério CV presentation web page
- 
-HTML | Typescript | SCSS
-
-@gontluc Sept 2022
-
-![Page Preview](showcase.png)
+http
 
 <br>
 
-![Page Preview](showcase2.png)
+## Technologies
 
+HTML, SASS, TypeScript
 
 <br>
 
-# Url
+## Dev Dependencies
 
-[cataract-portugal.com](https://cataract-portugal.com)
+- concurrently
+
+- live-server
+
+- sass
+
+- typescript
+
+<br>
+
+## Start dev environment
+
+- `npm start`

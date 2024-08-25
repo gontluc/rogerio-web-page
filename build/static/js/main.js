@@ -179,9 +179,6 @@ function pushAllData() {
     pushData(specialtyLeft2, data.specialty.specialtyContent.left2);
     pushData(galleryTitle, data.gallery.galleryTitle);
     pushData(videosTitle, data.videos.videosTitle);
-    video1URL.href = data.videos.video1.videoURL;
-    video2URL.href = data.videos.video2.videoURL;
-    video3URL.href = data.videos.video3.videoURL;
     pushData(video1Title, data.videos.video1.videoTitle);
     pushData(video1Desc, data.videos.video1.videoDescription);
     pushData(video2Title, data.videos.video2.videoTitle);

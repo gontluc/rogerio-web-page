@@ -1,0 +1,205 @@
+header {
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    background-image: url('/static/images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom right, #002D71, transparent 70%);
+        z-index: 0;
+    }
+
+    * {
+        position: relative;
+        
+    }
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 674px;
+
+        li {
+            margin: 0 12px;
+            @extend %hover-element;
+        }
+    }
+
+    #navbar-responsive {
+        display: none;
+
+        #ham-icon {
+            width: 30px;
+            @extend %hover-element;
+        }
+
+        #navbar-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 60px 0;
+            position: absolute;
+            top: -30px;
+            left: -50px;
+            background-color: $dark-blue;
+            width: 50vw;
+            z-index: 20;
+            border-bottom-right-radius: 10px;
+            transition: all .5s ease-in-out;
+
+            img {
+                top: -20px;
+                left: -40px;
+                cursor: pointer;
+            }
+
+            li {
+                margin: 10px;
+            }
+
+            li:hover {
+                color: $light-blue;
+                font-weight: bold;
+            }
+        }
+    }
+
+    #language-selector {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        font-size: 15px;
+
+        #current-language {
+            border-radius: 5px;
+            width: 146px;
+            display: flex;
+            align-items: center;
+            background-color: $dark-blue;
+            padding: 4px 12px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $light-blue;
+            }
+
+            p {
+                margin: 0 10px;
+            }
+
+            .select {
+                height: 13px;
+                margin-left: auto;
+            }
+        }
+
+        #select-language-box {
+            overflow: hidden;
+            border-radius: 5px;
+            position: absolute;
+            top: 0px;
+            border: 3px $dark-blue solid;
+            border-radius: 5px;
+            background-color: $dark-blue;
+
+            .select-language {
+                min-height: 35px;
+                width: 146px;
+                display: flex;
+                align-items: center;
+                background-color: $dark-blue;
+                padding: 4px 12px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $light-blue;
+                }
+
+                p {
+                    margin: 0 10px;
+                }
+
+                .select {
+                    height: 13px;
+                    margin-left: auto;
+                }
+
+                &:first-child {
+                    justify-content: flex-start;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    padding-left: 12px;
+                    cursor: default;
+                    
+                    p {
+                        margin: 0;
+                    }
+
+                    .select {
+                        margin-left: auto;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        
+        .flag {
+            height: 27px;
+            display: block;
+        }
+    }
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    img {
+        display: block;
+        margin: 0 10px;
+        height: 32px;
+    }
+}
+
+#hero-section {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 115px;
+    position: relative;
+
+    #add-copy {
+
+        #name {
+            font-size: 70px;
+            margin-bottom: 10px;
+        }
+
+        #profession {
+            font-size: 30px;
+            font-family: $font-roboto;
+            letter-spacing: 8px;
+            font-weight: bold;
+        }
+    }
+}

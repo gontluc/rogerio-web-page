@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "start": "concurrently \"npm run serve\" \"npm run watch:ts\" \"npm run watch:sass\"",
+        "serve": "live-server build --port=5500",
+        "watch:ts": "tsc -w",
+        "watch:sass": "sass --watch src/styles:build/static/css"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "live-server": "^1.2.2",
+        "sass": "^1.77.8",
+        "typescript": "^5.5.4"
+    }
+}
